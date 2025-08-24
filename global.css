@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design System */
+@layer base {
+  h1 {
+    @apply text-h1 font-heading text-light-text dark:text-dark-text;
+  }
+  h2 {
+    @apply text-h2 font-heading text-light-subtext dark:text-dark-subtext;
+  }
+  p {
+    @apply text-body font-body text-light-text dark:text-dark-text;
+  }
+  small {
+    @apply text-subtext font-body text-light-subtext dark:text-dark-subtext;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-light-primary text-white font-ui text-button rounded-button px-4 py-2 shadow-soft 
+           dark:bg-dark-primary;
+  }
+  .btn-secondary {
+    @apply bg-light-secondary text-light-text font-ui text-button rounded-button px-4 py-2 shadow-soft
+           dark:bg-dark-secondary dark:text-dark-text;
+  }
+  .card {
+    @apply bg-light-surface rounded-card p-4 shadow-soft dark:bg-dark-surface;
+  }
+}
